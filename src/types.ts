@@ -1,4 +1,4 @@
-type Success<T> = {
+export type Success<T> = {
   success: true;
   data: T;
 };
@@ -9,7 +9,7 @@ type ErrorDetails = {
   details?: Record<string, unknown>;
 };
 
-type Failure = {
+export type Failure = {
   success: false;
   error: ErrorDetails;
 };
